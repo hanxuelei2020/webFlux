@@ -1,0 +1,36 @@
+响应式编程(reactor实现)
+(1) 响应式编程操作中，reactor是满足reactive规范框架的
+(2) reactor有两个核心类，Mono和Flux，这两个类实现接口publisher，提供丰富操作符。
+flux对象实现发布者，返回N个元素；Mono实现发布者，返回0或者1个元素。
+(3) Flux和Mono都是数据的发布者，使用Flux和Mono都可以发出三种信号。错误信号表示
+终止信号。
+	三种信号，错误信号和完成信号都是终止信号不能同时出现。
+	如果没有值，只有完成信号，则表示是一个空数据流。
+	如果没有错误信号也没有完成信号，则表示是一个无线数据流。
+	Flux.error(Throwable t),错误信号
+(4) 调用just或者其他方法只是声明数据流，只有调用subscribe方法来订阅
+(5) 操作符操作
+		对数据流进行一道道的操作，成为操作符，比如工厂流水线 
+		
+		map 把元素映射为新元素
+		
+		flatMap 把元素映射为流，然后将多个流合并成为一个大流
+(6) mvc中分发器dispatcherController
+	webFlux中的分发器叫做dispatcherHandler
+	HandlerMapping ：请求查询到处理的方法
+	HandlerAdapter ：真正的调用者
+	HandlerResultHandler ：返回结果
+	
+	API实现函数式编程
+	routerFunction和HandlerFunction
+	webHandler
+(2) 
+(2) 
+(2) 
+(2) 
+(2) 
+(2) 
+(2) 
+(2) 
+
+
