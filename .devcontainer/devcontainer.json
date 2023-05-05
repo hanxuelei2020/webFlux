@@ -5,6 +5,7 @@
         "ghcr.io/devcontainers/features/java:1": {
             "version": "17",
             "installMaven": true,
+            "jdkDistro": "open",
             "mavenVersion": "3.8.6"
         },
         "ghcr.io/devcontainers-contrib/features/springboot-sdkman:2": {
