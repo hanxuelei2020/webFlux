@@ -2,11 +2,6 @@
     "name": "netty-im-devcontainer",
     "image": "mcr.microsoft.com/devcontainers/base:ubuntu",  // Any generic, debian-based image.
     "features": {
-        "ghcr.io/devcontainers/features/java:1": {
-            "version": "17",
-            "installMaven": true,
-            "mavenVersion": "3.8.6"
-        },
         "ghcr.io/devcontainers-contrib/features/springboot-sdkman:2": {
             "jdkVersion": "17",
             "jdkDistro": "open"
