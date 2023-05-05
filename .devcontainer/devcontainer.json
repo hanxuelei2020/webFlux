@@ -1,5 +1,5 @@
 {
-    "name": "web-flux",
+    "name": "hanxuelei2020-web-flux",
     "image": "mcr.microsoft.com/devcontainers/base:ubuntu",  // Any generic, debian-based image.
     "features": {
         "ghcr.io/devcontainers/features/java:1": {
